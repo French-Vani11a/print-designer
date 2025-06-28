@@ -7,8 +7,10 @@
     "@interactjs/auto-start": "^1.10.17",
     "@interactjs/interact": "^1.10.17",
     "@interactjs/modifiers": "^1.10.17",
+    "@vueuse/core": "^13.4.0",
     "html2canvas": "^1.4.1",
     "pdfjs-dist": "v3.4.120",
-    "pinia": "^3.0.3"
+    "pinia": "^3.0.3",
+    "vue": "^3"
   }
 }
