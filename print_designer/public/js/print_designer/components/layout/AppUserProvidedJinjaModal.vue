@@ -29,6 +29,7 @@ import AppModal from "./AppModal.vue";
 import AppCodeEditor from "./AppCodeEditor.vue";
 const MainStore = useMainStore();
 
+
 const size = {
 	width: "75vw",
 	height: "calc(94vh - 90px)",

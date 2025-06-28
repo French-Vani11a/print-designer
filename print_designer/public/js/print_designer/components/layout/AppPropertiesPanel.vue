@@ -64,6 +64,7 @@ import AppPropertiesPanelSection from "./AppPropertiesPanelSection.vue";
 import { onMounted } from "vue";
 import Icons from "../../icons/Icons.vue";
 
+
 const MainStore = useMainStore();
 const ElementStore = useElementStore();
 onMounted(() => createPropertiesPanel());

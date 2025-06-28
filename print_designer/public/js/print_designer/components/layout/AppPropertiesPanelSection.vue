@@ -92,7 +92,7 @@
 								v-if="
 									!fd.frappeControl &&
 									fd.isLabelled &&
-									(fd.icon == null || !fd.icon?.onlyIcon) &&
+									(fd.icon == null || !fd.icon.onlyIcon) &&
 									!fd.button
 								"
 								class="main-label"
@@ -319,6 +319,7 @@ const handleKeyDown = ({
 			: finalValue.value.toFixed(2);
 	}
 };
+
 
 const uomFormattedValue = (value, convertionUnit = MainStore.page.UOM) => {
 	const uomValue = useChangeValueUnit({

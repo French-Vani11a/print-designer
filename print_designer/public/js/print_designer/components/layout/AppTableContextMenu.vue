@@ -72,6 +72,7 @@
 	</div>
 </template>
 
+
 <script setup>
 import { ref, toRefs } from "vue";
 import { onClickOutside } from "@vueuse/core";

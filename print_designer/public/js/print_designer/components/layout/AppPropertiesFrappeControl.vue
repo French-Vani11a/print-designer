@@ -4,15 +4,16 @@
 		class="main-label"
 		v-text="field.label"
 	></label>
-	<div
-		:ref="
-			(el) => {
-				field.frappeControl(el, field.name);
-			}
+	<div :ref="
+		 (el)=>
+		{
+		field.frappeControl(el, field.name);
+		}
 		"
-		:key="MainStore.getCurrentElementsValues[0]?.id || '' + field.name"
+		:key="(MainStore.getCurrentElementsValues.length && MainStore.getCurrentElementsValues[0].id ? MainStore.getCurrentElementsValues[0].id : '') + field.name"
 		class="frappeControl"
-	></div>
+		>
+	</div>
 </template>
 
 <script setup>
