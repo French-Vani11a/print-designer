@@ -21,8 +21,10 @@
 				@mouseup.left="handleMouseUp"
 			>
 				<AppPdfSetup v-if="MainStore.mode == 'pdfSetup'" />
-				<template v-for="(object, index) in ElementStore.Elements" :key="object.id">
+				
 					<component
+						v-for="(object, index) in ElementStore.Elements"
+						:key="object.id"
 						:is="
 							object.type == 'text'
 								? isComponent[object.type][object.isDynamic ? 'dynamic' : 'static']
@@ -30,7 +32,7 @@
 						"
 						v-bind="{ object, index }"
 					></component>
-				</template>
+				
 			</div>
 			<AppWidthHeightModal v-if="!!MainStore.openModal" :openModal="MainStore.openModal" />
 			<AppDynamicTextModal
